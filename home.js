@@ -137,3 +137,18 @@
 // }
 // console.log(matrixSum([[1, 2, 3], [4, 5, 6], [7, 8, 9]]));
 // console.log(matrixSum([[1, 0, 1], [0, 1, 2], [3, 0, 2]]));
+
+//----------------------
+
+// let obj = {
+//     name: "ali",
+//     surname: "azizov",
+//     age: 34,
+//     11: "id",
+//     15: "error"
+// }
+// console.log(obj[15]);
+
+// let newMap = new Map()
+// newMap.set(1, "alisher")
+// console.log(newMap);
