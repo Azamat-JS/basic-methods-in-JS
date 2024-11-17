@@ -165,3 +165,16 @@
 // console.log(pow(3, 5));
 // console.log(pow(3, 1));
 // console.log(pow(3, 3));
+
+//-----------------------
+
+// let dice = Math.round(Math.random() * 6)
+
+// while (dice !== 6) {
+//     console.log(`you have ${dice}`);
+//     dice = Math.round(Math.random() * 6)
+//     if (dice === 6){
+//         console.log("finally 6!!!");
+
+//     }
+// }
