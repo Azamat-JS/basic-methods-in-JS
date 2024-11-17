@@ -152,3 +152,16 @@
 // let newMap = new Map()
 // newMap.set(1, "alisher")
 // console.log(newMap);
+
+//-------------------
+
+// function pow(x, n){
+//     if(n===1){
+//         return x
+//     }else{
+//         return x * pow(x, n-1)
+//     }
+// }
+// console.log(pow(3, 5));
+// console.log(pow(3, 1));
+// console.log(pow(3, 3));
