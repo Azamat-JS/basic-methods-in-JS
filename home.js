@@ -96,6 +96,21 @@
 
 //--------------- 8-vazifA -------------------------
 
+// function myFunc(arr) { 
+//         let big = 0   
+//         let a = 0
+//         for (let i = 0; i < arr.length; i++) {
+//             if (arr[i] < arr[i + 1]) {
+//                 a += 1
+//             }else if(big < a){
+//                 big = a
+//                 a = 0
+//             }
+//         }
+//         return big + 1
+//     }
+//     console.log(myFunc([12,22, 30, 5,6,7,8,9, 3]));
+
 //------------------ 9 - vazifa -----------------------
 
 
