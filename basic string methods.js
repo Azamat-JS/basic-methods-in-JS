@@ -147,3 +147,7 @@
 //   console.log(isBalance("({[()]})")); // true
 //   console.log(isBalance("({[(]]})")); // false
   
+//------------------ repeat method
+
+// const mood = 'Happy '
+// console.log(`I feel ${mood.repeat(3)}`);
