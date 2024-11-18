@@ -238,3 +238,12 @@
 // }
 // let arr = [1, 2, 3, 4, 5]
 // console.log(arr.myReverse());
+//--------------------------------
+
+// let arr = [12, 22, 34, 2, 7]
+// let ha = []
+
+// let myArr = arr.map((item, index, array) => {
+//     console.log(item + index);
+    
+// })

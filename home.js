@@ -178,3 +178,17 @@
 
 //     }
 // }
+
+
+
+//---------- callback
+
+// function sum(calling, x, y){
+//      let result = x + y
+//      calling(result)
+// }
+// function displayRes(result){
+//     console.log(result);
+    
+// }
+// sum(displayRes, 4, 6)
