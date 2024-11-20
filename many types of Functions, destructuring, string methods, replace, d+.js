@@ -302,4 +302,19 @@
 // temp = thermos.temperature
 // console.log(temp);
 
-//------------------------------ import and export
+//------------------------------ callback funtion ---------------------
+
+// function sum(calling, x, y){
+//      let result = x + y
+//      calling(result)
+// }
+// function displayRes(result){
+//     console.log(result);
+    
+// }
+// sum(displayRes, 4, 6)
+
+
+
+
+// let timerId = setInterval(() => console.log('tick'), 1000)

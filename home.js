@@ -180,63 +180,6 @@
 // }
 
 
-
-//---------- callback
-
-// function sum(calling, x, y){
-//      let result = x + y
-//      calling(result)
-// }
-// function displayRes(result){
-//     console.log(result);
-    
-// }
-// sum(displayRes, 4, 6)
-
-
-
-
-// let timerId = setInterval(() => console.log('tick'), 1000)
-
-// let contacts = [
-//     {
-//         firstName: "Aziz",
-//         LastName: "Omonov",
-//         number: 998909977887,
-//         Likes: ["ball", "jam", "cola"]
-//     },
-//     {
-//         firstName: "Akajon",
-//         LastName: "Ortiqov",
-//         number: 998909977887,
-//         Likes: ["balloon", "jug", "fanta"]
-//     },
-//     {
-//         firstName: "Anvar",
-//         LastName: "Ochilov",
-//         number: 998909977887,
-//         Likes: ["bell", "camel", "eucola"]
-//     },
-//     {
-//         firstName: "Adham",
-//         LastName: "Oripov",
-//         number: 998909977887,
-//         Likes: ["baller", "jaming", "olcola"]
-//     }
-// ]
-// function lookupFile(name, prop){
-// for (let i = 0; i < contacts.length; i++) {
-//     if(contacts[i].firstName === name){
-//     return contacts[i][prop] || "no such property"
-
-//     }
-    
-// }
-// return "no such contact"
-// }
-// const result = lookupFile("Adham", "number")
-// console.log(result);
-
 // -------------- destructuring with objects -------------
 // const restaurant = {
 // 	name: 'Rayhon Milliy Taomlar',
@@ -254,3 +197,40 @@
 // })()
 
 // console.log(rest(restaurant));
+
+//------------------
+
+// const meanTemp = {
+//     today : 11.09,
+//     tomorrow: 13.8
+// }
+
+// function getTomorrowWeather(meanTemper){
+//     const {tomorrow : nextDayWeather} = meanTemper
+//     return nextDayWeather
+// }
+// const result = getTomorrowWeather(meanTemp)
+// console.log(result);
+//---------------------------- construction function
+
+// function Product(name, price){
+//     this.name = name;
+//     this.price = price;
+//     this.displayProduct = function(){
+//         console.log(`Product: ${this.name}`);
+//         console.log(`Price: ${this.price}`);        
+//     }
+//     this.calculateTotal = function(salesTaxes){
+//         return this.price + (this.price * salesTaxes)
+//     }
+// }
+// const salesTaxes = 0.05
+
+// const product1 = new Product("shirt", 19)
+// const product2 = new Product("hat", 13)
+// const product3 = new Product("jeans", 20)
+
+// product1.displayProduct()
+// const totalPrice = product1.calculateTotal(salesTaxes)
+// console.log(`Total price (with tax): $${totalPrice.toFixed(2)}`);
+    

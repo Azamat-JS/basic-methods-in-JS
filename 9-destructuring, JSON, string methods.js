@@ -24,6 +24,24 @@
 // 	mainMenu: ['osh', 'norin', 'manti']
 // }
 
+// -------------- destructuring with objects -------------
+// const restaurant = {
+// 	name: 'Rayhon Milliy Taomlar',
+// 	location: 'Tashkent',
+// 	categories: ['national', 'fast food', 'european cuisine', 'turkish'],
+// 	startMenu: ['somsa', 'lagman', 'salad', 'soup'],
+// 	mainMenu: ['osh', 'norin', 'manti']
+// }
+
+// const rest = (function(){
+//     return function({name, mainMenu}){
+//         return `${name} has special foods like ${mainMenu}`
+        
+//     }
+// })()
+
+// console.log(rest(restaurant));
+
 //categories ichidan birinchi ikkita elementni desktruktsiya qilish
 //categories ichidan birinchi va uchinchi elementni desktruktsiya qilish
 

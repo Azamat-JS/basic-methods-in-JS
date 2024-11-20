@@ -39,29 +39,29 @@
 
 //---------------------------------------------------------
 
-// class User {
-//     #token
-//     constructor(username, password){
-//         this.username = username
-//         this.password = password
-//     }
-//     login(username, password){
-//         if(username, password){
-//             if(username === this.username && password && this.password)
-//                 return true
-//             }
-//             return false
-//         }
-//         logOut(){
-//             this.#token = false
-//             console.log("logout");
+class User {
+    #token
+    constructor(username, password){
+        this.username = username
+        this.password = password
+    }
+    login(username, password){
+        if(username, password){
+            if(username === this.username && password && this.password)
+                return true
+            }
+            return false
+        }
+        logOut(){
+            this.#token = true
+            console.log("logout");
             
-//         }
-//     }
-// const user = new User("Kamol", 1234)
-// console.log(user.login("jamol", 234));
-// console.log(user.login("Kamol", 1234));
-// user.logOut()
+        }
+    }
+const user = new User("Kamol", 1234)
+console.log(user.login("jamol", 234));
+console.log(user.login("Kamol", 1234));
+user.logOut()
 
 //------------------------------------------------------
 
@@ -271,78 +271,78 @@
 
 
 ///////////////////// Exercise 2
-class Product {
-        constructor(name, price, category) {
-            this.name = name
-            this.price = price
-            this.category = category
-        }
-    }
+// class Product {
+//         constructor(name, price, category) {
+//             this.name = name
+//             this.price = price
+//             this.category = category
+//         }
+//     }
     
 
-class Products {
-    constructor(categoryList){
-        this.categoryList = categoryList
-    }
-    filterByCategory(categoryName) {
-        let list = []
-        this.categoryList.map(element => {
-            if (element.category == categoryName) {
-                list.push(element)
-            }
-        })
-        return list
-    }
+// class Products {
+//     constructor(categoryList){
+//         this.categoryList = categoryList
+//     }
+//     filterByCategory(categoryName) {
+//         let list = []
+//         this.categoryList.map(element => {
+//             if (element.category == categoryName) {
+//                 list.push(element)
+//             }
+//         })
+//         return list
+//     }
 
-    filterbyMinPrice(minPrice){
-        let list = []
-        this.categoryList.map(element => {
-            if (element.price >=minPrice) {
-                list.push(element)
-            }
-        })
-        return list
-    }
+//     filterbyMinPrice(minPrice){
+//         let list = []
+//         this.categoryList.map(element => {
+//             if (element.price >=minPrice) {
+//                 list.push(element)
+//             }
+//         })
+//         return list
+//     }
 
-    filterbyMaxPrice(maxPrice){
-        let list = []
-        this.categoryList.map(element => {
-            if (element.price <=maxPrice) {
-                list.push(element)
-            }
-        })
-        return list
-    }
-}
-const products = new Products([
-    new Product(
-        'Macbook pro',
-        1600,
-        'Notebook'
-    ),
+//     filterbyMaxPrice(maxPrice){
+//         let list = []
+//         this.categoryList.map(element => {
+//             if (element.price <=maxPrice) {
+//                 list.push(element)
+//             }
+//         })
+//         return list
+//     }
+// }
+// const products = new Products([
+//     new Product(
+//         'Macbook pro',
+//         1600,
+//         'Notebook'
+//     ),
 
-    new Product(
-        'Macbook air',
-        1600,
-        'Notebook'
-    ),
+//     new Product(
+//         'Macbook air',
+//         1600,
+//         'Notebook'
+//     ),
 
-    new Product(
- 'Iphone 15',
-1200,
-    'Phone'
-    ),
+//     new Product(
+//  'Iphone 15',
+// 1200,
+//     'Phone'
+//     ),
 
-    new Product(
-        'Iphone 16',
-        1600,
-        'Phone'
-    ),
-])
+//     new Product(
+//         'Iphone 16',
+//         1600,
+//         'Phone'
+//     ),
+// ])
 
-console.log(products.filterByCategory('Phone'))
-console.log(products.filterbyMinPrice(1200))
-console.log(products.filterbyMaxPrice(1200))
+// console.log(products.filterByCategory('Phone'))
+// console.log(products.filterbyMinPrice(1200))
+// console.log(products.filterbyMaxPrice(1200))
 
 
 // Object.prototype.ObjProtiotype = function () {
