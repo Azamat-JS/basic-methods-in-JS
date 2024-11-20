@@ -191,3 +191,13 @@
 //      console.log(`caught an Error: ${error.message}`);
      
 // }
+
+
+//----------------------- REST
+
+// function sumAll(...args){
+//     let sum = 0 
+//     for (let arg of args) sum += arg
+//         return sum
+// }
+// console.log(sumAll(0, 1, 4, 0, 2));

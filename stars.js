@@ -65,23 +65,23 @@
 
 //-------------------------------------------
 
-function stars(dig) {
-    let result = ""
-    for (let i = 0; i < dig; i++) {
-        for (let j = 0; j < dig; j++) {
-            if (i === 0 || j === 0 || i===dig-1  ||j ===dig-1 ) {
-                result += " *"
-            } 
-            else if (i < dig && (i===j || i + j ===dig-1)) {
-                result += " *"
-            }else {
-                result += "  "
-            }
+// function stars(dig) {
+//     let result = ""
+//     for (let i = 0; i < dig; i++) {
+//         for (let j = 0; j < dig; j++) {
+//             if (i === 0 || j === 0 || i===dig-1  ||j ===dig-1 ) {
+//                 result += " *"
+//             } 
+//             else if (i < dig && (i===j || i + j ===dig-1)) {
+//                 result += " *"
+//             }else {
+//                 result += "  "
+//             }
 
-        }
-        result += "\n"
+//         }
+//         result += "\n"
 
-    }
-    return result;
-}
-console.log(stars(10));
+//     }
+//     return result;
+// }
+// console.log(stars(10));

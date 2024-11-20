@@ -192,3 +192,65 @@
     
 // }
 // sum(displayRes, 4, 6)
+
+
+
+
+// let timerId = setInterval(() => console.log('tick'), 1000)
+
+// let contacts = [
+//     {
+//         firstName: "Aziz",
+//         LastName: "Omonov",
+//         number: 998909977887,
+//         Likes: ["ball", "jam", "cola"]
+//     },
+//     {
+//         firstName: "Akajon",
+//         LastName: "Ortiqov",
+//         number: 998909977887,
+//         Likes: ["balloon", "jug", "fanta"]
+//     },
+//     {
+//         firstName: "Anvar",
+//         LastName: "Ochilov",
+//         number: 998909977887,
+//         Likes: ["bell", "camel", "eucola"]
+//     },
+//     {
+//         firstName: "Adham",
+//         LastName: "Oripov",
+//         number: 998909977887,
+//         Likes: ["baller", "jaming", "olcola"]
+//     }
+// ]
+// function lookupFile(name, prop){
+// for (let i = 0; i < contacts.length; i++) {
+//     if(contacts[i].firstName === name){
+//     return contacts[i][prop] || "no such property"
+
+//     }
+    
+// }
+// return "no such contact"
+// }
+// const result = lookupFile("Adham", "number")
+// console.log(result);
+
+// -------------- destructuring with objects -------------
+// const restaurant = {
+// 	name: 'Rayhon Milliy Taomlar',
+// 	location: 'Tashkent',
+// 	categories: ['national', 'fast food', 'european cuisine', 'turkish'],
+// 	startMenu: ['somsa', 'lagman', 'salad', 'soup'],
+// 	mainMenu: ['osh', 'norin', 'manti']
+// }
+
+// const rest = (function(){
+//     return function({name, mainMenu}){
+//         return `${name} has special foods like ${mainMenu}`
+        
+//     }
+// })()
+
+// console.log(rest(restaurant));
