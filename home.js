@@ -234,3 +234,14 @@
 // const totalPrice = product1.calculateTotal(salesTaxes)
 // console.log(`Total price (with tax): $${totalPrice.toFixed(2)}`);
     
+//---------------------------------
+// function randomRange(min, max){
+//     return Math.floor(Math.random() * (max-min + 1)) + min
+// }
+// console.log(randomRange(1, 9));
+//----------------------------------------------
+// function converToInteger(str){
+// return parseInt(str)
+// }
+// console.log(converToInteger("56"));
+
