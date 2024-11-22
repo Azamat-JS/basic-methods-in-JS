@@ -162,3 +162,10 @@
 //   console.log(i)
 
 // }
+
+function squareDigits(num) { 
+  return ~~num.toString().split('').reduce(function(p, c) {
+      return '' + p + (~~c*~~c);
+  }, '');
+}
+console.log(squareDigits(4312));
