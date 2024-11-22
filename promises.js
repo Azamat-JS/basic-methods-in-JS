@@ -304,71 +304,159 @@
 
 //--------------- withhout promises --------
 
-function walkDog(callback){
+// function walkDog(callback){
 
-    setTimeout(() => {
-        console.log("You walk the dog");
-        callback()
-    }, 1500)
-}
+//     setTimeout(() => {
+//         console.log("You walk the dog");
+//         callback()
+//     }, 1500)
+// }
 
-function cleanKitchen(callback){
+// function cleanKitchen(callback){
 
-    setTimeout(() => {
-        console.log("You clean the kitchen");
-        callback()
-    }, 2500)
-}
+//     setTimeout(() => {
+//         console.log("You clean the kitchen");
+//         callback()
+//     }, 2500)
+// }
 
-function takeOutTrash(callback){
+// function takeOutTrash(callback){
 
-    setTimeout(() => {
-        console.log("you take out the trash");
-        callback()
-   }, 500 )
+//     setTimeout(() => {
+//         console.log("you take out the trash");
+//         callback()
+//    }, 500 )
 
-}
-walkDog(() => {
-    cleanKitchen(() => {
-        takeOutTrash(() => console.log('you finished all the chores'))
-    })
-})
+// }
+// walkDog(() => {
+//     cleanKitchen(() => {
+//         takeOutTrash(() => console.log('you finished all the chores'))
+//     })
+// })
 
 //------------- with promise ----------
 
-function walkDog(){
-    return new Promise ((resolve, reject) => {
-        setTimeout(() => {
-          resolve("You walk the dog");
-    
-        }, 1500)
-    })
-}
+// function walkDog(){
+//     return new Promise ((resolve, reject) => {
+//         setTimeout(() => {
 
-function cleanKitchen(){
+//             const dogwalked = true;
+//             if(dogwalked){
+//           resolve("You walk the dog");
+//             }
+//             else{
+//                 reject("you didn't walk the dog")
+//             }
+//         }, 1500)
+//     })
+// }
 
-    return new Promise((resolve, reject) =>
-    {
-        setTimeout(() => {
-           resolve("You clean the kitchen");
-         
-        }, 2500)
-    })
-}
+// function cleanKitchen(){
 
-function takeOutTrash(){
+//     return new Promise((resolve, reject) =>
+//     {
+//         setTimeout(() => {
 
- return new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve("you take out the trash");
+//             const kitchenCleaned = false
+//             if(kitchenCleaned){
+//            resolve("You clean the kitchen");
+//             }
+//             else{
+//                 reject("You didn't clean the kitchen")
+//             }
+//         }, 2500)
+//     })
+// }
+
+// function takeOutTrash(){
+
+//  return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+
+//         const trashTakenOut = true;
+//         if(trashTakenOut){
+//             resolve("you take out the trash");
+//         }else{
+//             reject("you did not take out the trash")
+//         }
    
-   }, 500 )
- })
+//    }, 500 )
+//  })
 
-}
+// }
 
-walkDog().then(value => {console.log(value); return cleanKitchen()})
-                          .then(value => {console.log(value);return takeOutTrash()})
-                           .then(value => { console.log(value); console.log('You finished all the chores');
-                           
-                           })
+// walkDog().then(value => {console.log(value); return cleanKitchen()})
+//                           .then(value => {console.log(value);return takeOutTrash()})
+//                            .then(value => { console.log(value); console.log('You finished all the chores')})
+//                            .catch(error => console.error(error))
+
+//------------- async vs await --------------------
+
+// async function walkDog(){
+//     return new Promise ((resolve, reject) => {
+//         setTimeout(() => {
+
+//             const dogwalked = false
+//             if(dogwalked){
+//           resolve("You walk the dog");
+//             }
+//             else{
+//                 reject("you didn't walk the dog")
+//             }
+//         }, 1500)
+//     })
+// }
+
+// function cleanKitchen(){
+
+//     return new Promise((resolve, reject) =>
+//     {
+//         setTimeout(() => {
+
+//             const kitchenCleaned = true;
+//             if(kitchenCleaned){
+//            resolve("You clean the kitchen");
+//             }
+//             else{
+//                 reject("You didn't clean the kitchen")
+//             }
+//         }, 2500)
+//     })
+// }
+
+// function takeOutTrash(){
+
+//  return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+
+//         const trashTakenOut = true;
+//         if(trashTakenOut){
+//             resolve("you take out the trash");
+//         }else{
+//             reject("you did not take out the trash")
+//         }
+   
+//    }, 500 )
+//  })
+
+// }
+
+// async function doChores() {
+//     try{
+//         const walkDogResult = await walkDog()
+//         console.log(walkDogResult);
+        
+//         const cleanKitchenResult = await cleanKitchen()
+//         console.log(cleanKitchenResult);
+        
+//         const takeOutTrashResult = await takeOutTrash()
+//         console.log(takeOutTrashResult);
+        
+//         console.log("You finished all the tasks");
+//     }
+//     catch (error){
+//   console.error(error);
+  
+//     }
+// }
+// doChores()
