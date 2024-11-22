@@ -134,19 +134,26 @@
 //   }  
 // }
 
+//----------------------------
 
+// function squareDigits(num){
+//   let arr = []
+//   let str = ""
+//   let nums = num.toString().split("")
+//   for(let i = 0; i < nums.length; i++){
+//     n = nums[i] - 0
+//     arr.push(n)
+//   }
+//  let a = arr.map(x => x * x)
+//  for (let i = 0; i < a.length; i++) {
+//   str += a[i]
+  
+//  }
+//  return str
+// }
+// console.log(squareDigits(8324))
 
-for (let i = 1; i < 10; i+=2) {
-
-  if(i==9) {  
-    continue
-   
-  }  
-  console.log(i)
-
-}
-
-
+//----------------------------------------
 // for (let i = 1; i < 10; i++) {
 
 //   if(i %2 ==0 || i ==9) {
