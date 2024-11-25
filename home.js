@@ -253,3 +253,48 @@
 //   }
 //   console.log(squareDigits(4312));
   
+//-------------------
+
+// function factorial(n){
+//     multiply = 1
+//     for (let i = 1; i <= n; i++) {
+//           multiply = multiply * i
+        
+//     }
+//     return multiply
+// }
+// console.log(factorial(5));
+// //-------------
+
+// function recursive(x, n){
+//     if(n === 1){
+//         return x
+//     }else {
+//         return x * recursive(x, n -1)
+//     }
+// }
+// console.log(recursive(2, 4));
+//----------------------------
+
+// function XO(str) {
+//     let newStr = str.toLowerCase()
+//     let sumX = 0
+//     let sumO = 0
+//     for(let i = 0; i < newStr.length; i++){
+//      if(newStr[i] === "x"){
+//       sumX++
+//      }else if(newStr[i] === "o"){
+//       sumO++
+//      }
+//       }
+//       if(sumO == sumX){
+//         return true
+//       }else{
+//        return false
+//       }
+      
+//     }
+// console.log(XO("XooOxxm"));
+
+//----------------------
+
