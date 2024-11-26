@@ -35,4 +35,23 @@
 //    }
 //   }
 //   console.log(sumSalaries(company));
+  //-----------------------------------
+
+//   function sumTo(n){
+//     if(n === 1){
+//        return n
+//     }else {
+//       return n += sumTo(n - 1) 
+//     }
+//   }
+//   console.log(sumTo(10));
   
+//----------- fibonacci----
+// function fib(n){
+//     if(n <= 1){
+//         return n
+//     }else{
+//       return fib(n -1) + fib(n - 2)
+//     }
+// }
+// console.log(fib(7));
