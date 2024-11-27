@@ -25,7 +25,13 @@
 // Dunyo`
 // console.log(str1 == str2);
 //----------------------------
-
+let str = "I am coding now"
+let new = ""
+for(let i = 0; i <= str.length; i++){
+        if(String(str[i])){
+                new += str[i]
+                console.log(new)
+//---------------------------------------                
 // console.log(`the backslash: \\`);
 // console.log(`I\'m 28!`);
 //-------------------------------
