@@ -254,7 +254,7 @@
 // arr.splice(2, 0, 3, 4, 5)
 // console.log(arr);
 
-let array = [10, 90, 100, 30, 40, 50]
-array.splice(1, 2, 20)
+// let array = [10, 90, 100, 30, 40, 50]
+// array.splice(1, 2, 20)
 
-console.log(array);
+// console.log(array);
