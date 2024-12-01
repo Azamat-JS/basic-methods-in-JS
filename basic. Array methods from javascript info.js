@@ -247,3 +247,14 @@
 //     console.log(item + index);
     
 // })
+
+//---------splice--------------
+
+// let arr = [1, 2, 6, 7, 8]
+// arr.splice(2, 0, 3, 4, 5)
+// console.log(arr);
+
+let array = [10, 90, 100, 30, 40, 50]
+array.splice(1, 2, 20)
+
+console.log(array);

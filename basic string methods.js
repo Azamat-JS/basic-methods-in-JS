@@ -25,12 +25,7 @@
 // Dunyo`
 // console.log(str1 == str2);
 //----------------------------
-let str = "I am coding now"
-let new = ""
-for(let i = 0; i <= str.length; i++){
-        if(String(str[i])){
-                new += str[i]
-                console.log(new)
+
 //---------------------------------------                
 // console.log(`the backslash: \\`);
 // console.log(`I\'m 28!`);
@@ -157,3 +152,24 @@ for(let i = 0; i <= str.length; i++){
 
 // const mood = 'Happy '
 // console.log(`I feel ${mood.repeat(3)}`);
+
+//------------- indexOf -----------------
+let str = "As sly as a fox, as strong as an ox"
+let target = "as"
+
+let pos= -1
+while((pos = str.indexOf(target, pos + 1)) != -1){
+    console.log(pos);
+    
+}
+//----------^^^^^^^^^^^^^^^^^^^
+let string = 'As sly as a fox, as strong as an ox'
+let targets = 'as'
+let position = 0
+while(true){
+    let foundPos = str.indexOf(targets, position)
+    if(foundPos == -1)break;
+    console.log(`found at ${foundPos}`);
+    position = foundPos + 1
+    
+}

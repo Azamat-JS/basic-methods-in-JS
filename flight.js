@@ -25,7 +25,7 @@
 //         }
 //     }
 
-//     getAvalibleSeats() {
+//     getAvailableSeats() {
 //         this.#allSeats.forEach(element => {
 //             if (!this.#orderedSeats.includes(element)) {
 //                 console.log(element)

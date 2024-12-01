@@ -39,29 +39,29 @@
 
 //---------------------------------------------------------
 
-class User {
-    #token
-    constructor(username, password){
-        this.username = username
-        this.password = password
-    }
-    login(username, password){
-        if(username, password){
-            if(username === this.username && password && this.password)
-                return true
-            }
-            return false
-        }
-        logOut(){
-            this.#token = true
-            console.log("logout");
+// class User {
+//     #token
+//     constructor(username, password){
+//         this.username = username
+//         this.password = password
+//     }
+//     login(username, password){
+//         if(username, password){
+//             if(username === this.username && password && this.password)
+//                 return true
+//             }
+//             return false
+//         }
+//         logOut(){
+//             this.#token = true
+//             console.log("logout");
             
-        }
-    }
-const user = new User("Kamol", 1234)
-console.log(user.login("jamol", 234));
-console.log(user.login("Kamol", 1234));
-user.logOut()
+//         }
+//     }
+// const user = new User("Kamol", 1234)
+// console.log(user.login("jamol", 234));
+// console.log(user.login("Kamol", 1234));
+// user.logOut()
 
 //------------------------------------------------------
 
@@ -191,7 +191,7 @@ user.logOut()
 //     console.log(`I am ${this.name} and I am ${this.age}`);
 // }
 // }
-
+// ///---------- inheritance
 // class Developer extends Person{
 //  constructor(name, age, experience){
 //     super(name, age)
@@ -208,12 +208,25 @@ user.logOut()
 //     new Developer("Murod", 19, 2)
 // ]
 
-// function developSoftWare (developers){
+// const engineers = [
+//     new Person("Ali", 20),
+//     new Person("Anvar", 24),
+//     new Person("Alisher", 32)
+// ]
+// function developSoftWare (){
 // for(let programmer of developers){
 //   programmer.java()
 // }
 // }
 // developSoftWare(developers)
+
+// function engineersInfo(){
+//     for (const engineer of engineers) {
+//         engineer.description()
+//     }
+// }
+// engineersInfo(engineers)
+
 //--------------------------------------- polymorphism
 
 // class Laptop {
@@ -299,7 +312,7 @@ user.logOut()
 //         this.categoryList.map(element => {
 //             if (element.price >=minPrice) {
 //                 list.push(element)
-//             }
+//             }sd
 //         })
 //         return list
 //     }
@@ -359,3 +372,78 @@ user.logOut()
 // delete Object.prototype.ObjProtiotype
 
 // console.log(obj.ObjProtiotype());
+
+//--------------------  abstraction ----
+
+// class Animal {
+//     constructor(name){
+//         this.name = name;
+//         this.speed = 0;
+//     }
+//     run(speed){
+//         this.speed = speed
+//         console.log(`${this.name} runs with speed ${this.speed}.`);
+//     }
+//     stop(){
+//         this.speed = 0
+//         console.log(`${this.name} stands still`);
+//     }
+// }
+// let animal = new Animal("lion")
+// animal.stop()
+//------------- inheritance ^^^^^^
+
+// class Rabbit extends Animal {
+//     constructor(name, color){
+//         super(name)
+//         this.color = color
+//     }
+//     hide(){
+//         console.log(` This ${this.color} ${this.name} is hiding`);   
+//     }
+// }
+// let rabbit = new Rabbit("rabbit", "white")
+
+// rabbit.hide()
+
+//--------------------------------------------- polymorphism =================
+
+// class Animal {
+//     constructor(name){
+//         this.name = name;
+//         this.speed = 0;
+//     }
+//     run(speed){
+//         this.speed = speed
+//         console.log(`${this.name} runs with speed ${this.speed}.`);
+//     }
+//     stop(){
+//         this.speed = 0
+//         console.log(`${this.name} stands still`);
+//     }
+// }
+
+// class Zebra extends Animal{
+//     hide(){
+//         console.log(`${this.name} hides!`);
+        
+//     }
+//     stop(){
+//         super.stop()
+//         this.hide()
+//     }
+// }
+// let zebra = new Zebra("zebra")
+// zebra.run(7)
+// zebra.stop()
+
+//-------------------------------
+
+// let arr = [1, 2, 6, 7, 8]
+// arr.splice(2, 0, 3, 4, 5)
+// console.log(arr);
+
+let array = [10, 90, 100, 30, 40, 50]
+array.splice(1, 2, 20)
+
+console.log(array);
