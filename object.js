@@ -428,12 +428,16 @@
 
 //------------ descriptors --------------
 
-let obj = {}
+// let obj = {}
 
-Object.defineProperty(obj, "name", {
-    value: "Aziz",
-    writable: true,
-    enumerable: true,
-    configurable: true
-})
-console.log(obj);
+// Object.defineProperty(obj, "name", {
+//     value: "Aziz",
+//     writable: true,
+//     enumerable: true,
+//     configurable: true
+// })
+// obj.name = "Anvar"
+// obj.age = 23
+// obj.id = 1
+// delete obj.age
+// console.log(obj);
