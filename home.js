@@ -298,3 +298,21 @@
 
 //----------------------
 
+let sayHiMixin = {
+    sayHi(){
+        console.log(`salom${this.name}`);
+        
+    },
+    sayBey() {
+     console.log(`bey${this.name}`);
+     
+    }
+};
+class User {
+    constructor(name){
+        this.name = name
+    }
+}
+
+Object.assign(User.prototype, sayHiMixin)
+new User("Aziz").sayHi()
