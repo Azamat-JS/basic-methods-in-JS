@@ -461,6 +461,40 @@
 // }
 // doChores()
 
-//-------------------
+//--------- the value doesn't pass multiplied so the result is always 1 --------------
 
+// let promise = new Promise(function(resolve, reject){
+//     setTimeout(() => resolve(1), 1000);
+// });
+// promise.then(function(result) {
+//     console.log(result);
+//     return result * 2
+// })
+// promise.then(function(result) {
+//     console.log(result);
+//     return result * 2
+// })
+// promise.then(function(result){
+//     console.log(result);
+    
+// })
+//----------------- changed result ---------------
+
+// new Promise(function(resolve, reject){
+//     setTimeout(() => resolve(1), 1000)
+// }).then(function(result){
+//     console.log(result);
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => resolve(result * 2), 1000)
+//     })
+// }).then(function(result){
+//     console.log(result);
+//     return new Promise((resolve, reject) => {
+//        setTimeout(() => resolve(result * 2), 1000)
+//     })
+    
+// }).then(function(result) {
+//     console.log(result);
+    
+// })
 

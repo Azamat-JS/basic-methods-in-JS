@@ -298,21 +298,33 @@
 
 //----------------------
 
-let sayHiMixin = {
-    sayHi(){
-        console.log(`salom${this.name}`);
+// let sayHiMixin = {
+//     sayHi(){
+//         console.log(`salom${this.name}`);
         
-    },
-    sayBey() {
-     console.log(`bey${this.name}`);
+//     },
+//     sayBey() {
+//      console.log(`bey${this.name}`);
      
-    }
-};
-class User {
-    constructor(name){
-        this.name = name
+//     }
+// };
+// class User {
+//     constructor(name){
+//         this.name = name
+//     }
+// }
+
+// Object.assign(User.prototype, sayHiMixin)
+// new User("Aziz").sayHi()
+
+//--------------- greatest common divisor (GCD) ----------------
+
+function gcd(a, b){
+    if(b === 0){
+        return a
+    }else{
+        return gcd(b, a % b)
     }
 }
 
-Object.assign(User.prototype, sayHiMixin)
-new User("Aziz").sayHi()
+
