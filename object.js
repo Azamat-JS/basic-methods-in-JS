@@ -451,3 +451,38 @@
 // user.address = "Progress"
 // console.log(user);
 
+//------------- iterating of obj ---------
+
+// let user = {
+//   name: "John",
+//   age: 30
+// }
+// for (let [key, value] of Object.entries(user)) {
+//   console.log(`${key} is belongs to ${value}`);
+// }
+
+//--------------- ^^^^^^^^^^^^^^^^^ -------
+
+// let user = new Map()
+// user.set("name", "Aziz")
+// user.set("age", "39")
+
+// for (let [key, value] of user) {
+//    [value, key] = [key, value]
+//    console.log(key, value);
+   
+// }
+
+//---------- destructuring obj -----------
+
+// let obj = {
+//   one: "bir",
+//   two: "ikki",
+//   three: "uch"
+// }
+// let asd = {}
+// for (let [key, value] of Object.entries(obj)) {
+//       [key, value] = [value, key]
+//       asd[key] = value  
+//     }
+//     console.log(asd);

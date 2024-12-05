@@ -259,4 +259,45 @@
 
 // console.log(array);
 
-//
+//----------- destructuring array -----------
+
+// let [name1, name2, ...others] = ["julio", 'nepal', 'antonio', 'alberto']
+// console.log(others[0]);
+// console.log(name2);
+
+//------------ copywithin ---------------
+
+// let array = ['cat', 'carrot', 'cabbage', 'cucumber', 'toy', 'potato']
+// array.copyWithin(0, 2, 3)
+// array.copyWithin(4, 1, 2)
+// console.log(array);
+
+//------------- entries -----------
+
+// const array1 = ['a', 'b', 'c']
+
+// let iterator = array1.entries()
+// console.log(iterator.next().value);
+// console.log(iterator.next().value);
+// console.log(iterator.next().value);
+
+//---------------- fill method ========
+
+// let arr = ["a", 'o', 23, true]
+
+// console.log(arr.fill('node', 3, 6));
+// console.log(arr.fill('node', 2));
+
+//------------ reduceRight --------
+
+// const arr1 = [
+//   [0, 1, 2],
+//   [3, 4, 5],
+//   [6, 7, 8]
+// ]
+
+// const result = arr1.reduceRight((a, b) => a.concat(b))
+// console.log(result);
+
+
+
