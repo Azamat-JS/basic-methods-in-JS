@@ -56,40 +56,51 @@
 // }
 // console.log(fib(7));
 
+//----------------------------- callback function ---------------
+// function walkDog(callback){
 
-function walkDog(callback){
+//     setTimeout(() => {
+//         console.log("You walk the dog");
+//         callback()
+//     }, 1500)
+// }
 
-    setTimeout(() => {
-        console.log("You walk the dog");
-        callback()
-    }, 1500)
-}
+// function cleanKitchen(callback){
 
-function cleanKitchen(callback){
+//     setTimeout(() => {
+//         console.log("You clean the kitchen");
+//         callback()
+//     }, 2500)
+// }
+// function cleanKitchen(callback){
 
-    setTimeout(() => {
-        console.log("You clean the kitchen");
-        callback()
-    }, 2500)
-}
-function cleanKitchen(callback){
+//     setTimeout(() => {
+//         console.log("You clean the kitchen");
+//         callback()
+//     }, 2500)
+// }
 
-    setTimeout(() => {
-        console.log("You clean the kitchen");
-        callback()
-    }, 2500)
-}
+// function takeOutTrash(callback){
 
-function takeOutTrash(callback){
+//     setTimeout(() => {
+//         console.log("you take out the trash");
+//         callback()
+//    }, 500 )
 
-    setTimeout(() => {
-        console.log("you take out the trash");
-        callback()
-   }, 500 )
+// }
+// walkDog(() => {
+//     cleanKitchen(() => {
+//         takeOutTrash(() => console.log('you finished all the chores'))
+//     })
+// })
+//---------------- constructor function ------------
 
-}
-walkDog(() => {
-    cleanKitchen(() => {
-        takeOutTrash(() => console.log('you finished all the chores'))
-    })
-})
+// function Car(name, brand){
+// this.name = name;
+// this.brand = brand
+// return `${this.name} is made by ${this.brand}`
+// }
+
+// const auto = new Car("Ferrari", "REDBULL")
+// console.log(auto);
+

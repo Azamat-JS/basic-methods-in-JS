@@ -441,3 +441,13 @@
 // obj.id = 1
 // delete obj.age
 // console.log(obj);
+
+//------------ add value to key of object --------
+
+// let user = {
+//   name: "Lochin", 
+// }
+// user.age = 43
+// user.address = "Progress"
+// console.log(user);
+
