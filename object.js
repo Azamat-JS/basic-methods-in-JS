@@ -486,3 +486,27 @@
 //       asd[key] = value  
 //     }
 //     console.log(asd);
+
+//-------------------- finding the highest paid person -------------
+
+// let salaries = {
+//   John: 100, 
+//   Pete: 300,
+//   Mary: 250
+// }
+
+// function topSalary(obj){
+//   maxSalary = 0;
+//   maxName = null;
+// for (const [name, money] of Object.entries(obj)) {
+//   if(maxSalary < money){
+//     maxSalary = money
+//     maxName = name
+//   }
+// } 
+// return maxName;
+// }
+// console.log(topSalary(salaries));
+
+
+
