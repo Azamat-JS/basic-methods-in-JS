@@ -34,3 +34,24 @@
 // let techno = new MyTech("Temur");
 
 // techno.tech();
+
+//-----------------
+
+let ariphm = {
+multiply(){
+console.log(`${this.n * this.m}`);
+},
+division(){
+    console.log(`${this.n * this.m}`);  
+}
+}
+
+class Nums {
+    constructor(n, m){
+        this.n = n;
+        this.m = m
+    }
+}
+Object.assign(Nums.prototype, ariphm)
+let result = new Nums(12, 3).multiply()
+console.log(result);
