@@ -1,3 +1,5 @@
+// ------------  RECURSION ----------
+
 // let company = {
 //     sales: [{
 //       name: 'John',
@@ -6,7 +8,7 @@
 //       name: 'Alice',
 //       salary: 1600
 //     }],
-  
+
 //     development: {
 //       sites: [{
 //         name: 'Peter',
@@ -15,7 +17,7 @@
 //         name: 'Alex',
 //         salary: 1800
 //       }],
-  
+
 //       internals: [{
 //         name: 'Jack',
 //         salary: 1300
@@ -35,17 +37,26 @@
 //    }
 //   }
 //   console.log(sumSalaries(company));
-  //-----------------------------------
-
-//   function sumTo(n){
-//     if(n === 1){
-//        return n
-//     }else {
-//       return n += sumTo(n - 1) 
-//     }
+//-----------------------------------
+// function fetchWater(count){
+//   if(count === 0){
+//     console.log('No more water left');
+//     return;
 //   }
-//   console.log(sumTo(10));
-  
+//   console.log('fetching water...');
+//   fetchWater(count - 1)
+// }
+// fetchWater(5)
+//-----------------------------
+// function sumTo(n){
+//   if(n === 1){
+//      return n
+//   }else {
+//     return n += sumTo(n - 1)
+//   }
+// }
+// console.log(sumTo(10));
+
 //----------- fibonacci----
 // function fib(n){
 //     if(n <= 1){
@@ -110,12 +121,12 @@
 // console.log(sum(1, 2));
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-//------------- nested functions = closures 
+//------------- nested functions = closures
 
 // function outer(){
 //   console.log('outer');
 //   function inner(){
-//     console.log('inner');   
+//     console.log('inner');
 //   }
 //   inner()
 // }
@@ -147,11 +158,24 @@
 // brand()
 // }
 // foo(function(){
-//   console.log("Apple"); 
+//   console.log("Apple");
 // })
 // function name(){
 //   console.log("Banana");
 // }
 // foo(name)
 
-
+//----- high order function
+// function fnReturn(){
+//   return function(){
+//     console.log('returning');
+//   }
+// }
+// const fn = fnReturn()
+// fn()
+// ---------- IIFE -------------
+// (function(){
+// console.log('IIFE');
+// })
+// ()
+//---------------
