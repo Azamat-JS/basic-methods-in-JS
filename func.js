@@ -110,7 +110,7 @@
 // console.log(sum(1, 2));
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-//------------- nested functions
+//------------- nested functions = closures 
 
 // function outer(){
 //   console.log('outer');
@@ -133,3 +133,25 @@
 //   inner()
 // }
 // doSomething()
+//----------------------- closures ^^^^^^
+// function outer(x){
+//   function inner(y){
+//     return x + y
+//   }
+//   return inner
+// }
+// const outerReturn = outer(10)
+// console.log(outerReturn(2));
+//--------- --- callback simple
+// function foo(brand){
+// brand()
+// }
+// foo(function(){
+//   console.log("Apple"); 
+// })
+// function name(){
+//   console.log("Banana");
+// }
+// foo(name)
+
+
