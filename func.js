@@ -109,3 +109,27 @@
 // let sum = new Function('a', 'b', 'return a + b')
 // console.log(sum(1, 2));
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+//------------- nested functions
+
+// function outer(){
+//   console.log('outer');
+//   function inner(){
+//     console.log('inner');   
+//   }
+//   inner()
+// }
+// outer()
+
+//--------------------
+
+// let x = 10
+// const y = 20
+// var z = 30
+// function doSomething(){
+//   function inner (){
+//   console.log(x, y, z)
+//   }
+//   inner()
+// }
+// doSomething()
